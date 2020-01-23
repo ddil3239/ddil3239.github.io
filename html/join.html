@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/sjbg.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+        $(function() {
+                $('.navI').click(function() {
+                        $('.myMenu').slideToggle();
+                    }
+
+                );
+            }
+
+        );
+
+    </script>
+    <title>성지를 찾아보고 회원가입</title>
+</head>
+
+<body>
+    <header>
+        <div id="top">
+            <div id="toplogo">
+                <a href="../sjbg.html">
+                <p class="logo"><u class="bold">성지</u>를<br /> 찾아<u class="bold">보고</u></p>
+                </a>
+            </div>
+
+            <div id="search">
+                <form method=get action="http://www.google.co.kr/search" target="_blank">
+                    <table bgcolor="#FFFFFF">
+                        <tr>
+                            <td> <input type=text name=q size=25 maxlength=255 value="" /> <input type=submit name=btnG value="검색" /> </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+
+            <div id="lefttop">
+                <br>
+                <a href="../html/join.html">가입하기</a>
+                &nbsp;&nbsp;&nbsp;
+                <a href="../html/login.html">로그인 &nbsp;&nbsp;&nbsp;</a>
+            </div>
+        </div>
+
+    </header>
+    <nav>
+        <div id="container">
+            <button type="button" class="navI">
+                <span class="fa fa-bars" title="Menu"></span>
+            </button>
+            <ul class="myMenu">
+                <li class="menu1"><a href="../sjbg.html" style="color: white">홈</a></li>
+                <li class="menu2">
+                    여행지
+                    <ul class="menu2_s submenu">
+                        <li>아시아</li>
+                        <li>유럽</li>
+                        <li>남미</li>
+                        <li>북미</li>
+                        <li>오세아니아</li>
+                        <li>아프리카</li>
+                        <li>극지</li>
+                        <li>우주</li>
+                    </ul>
+                </li>
+                <li class="menu3">
+                    스타일
+                    <ul class="menu3_s submenu">
+                        <li>직원동행</li>
+                        <li>로컬가이드</li>
+                        <li>자유여행</li>
+                    </ul>
+                </li>
+                <li class="menu4">
+                    회사소개
+                    <ul class="menu4_s submenu">
+                        <li>회사소개</li>
+                        <li>오시는 길</li>
+                        <li>Q&amp;A</li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+    <div class="form_div" id="join" style="padding: 100px 500px;">
+        <form action="" method="">
+            <h2>가 입 하 기 </h2>
+            <table style="width: 700px; padding:30px 80px 30px 80px; align-content: center">
+
+                <tr>
+                    <td text-align="center">이름</td>
+                    <td>
+                        <input type="text" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>주민등록번호</td>
+                    <td><input type="text" name="num">-<input type="password" name="num2"></td>
+                </tr>
+
+                <tr>
+                    <td>아이디</td>
+                    <td>
+                        <input type="text" name="cursor:pointer">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>비밀번호</td>
+                    <td><input type="password" name="mbpw"> 영문/숫자포함 6자 이상</td>
+                </tr>
+
+                <tr>
+                    <td>비밀번호 확인</td>
+                    <td><input type="password" name="mbpw_re"></td>
+                </tr>
+
+                <tr>
+                    <td>비밀번호 힌트/답변</td>
+                    <td><select name='pwhint' size='1' class='select'>
+                            <option value=''>선택하세요</option>
+                            <option value='30'>졸업한 초등학교 이름은?</option>
+                            <option value='31'>제일 친한 친구의 핸드폰 번호는?</option>
+                            <option value='32'>아버지 성함은?</option>
+                            <option value='33'>어머니 성함은?</option>
+                            <option value='34'>어릴 적 내 별명은?</option>
+                            <option value='35'>가장 아끼는 물건은?</option>
+                            <option value='36'>좋아하는 동물은?</option>
+                            <option value='37'>좋아하는 색깔은?</option>
+                            <option value='38'>좋아하는 음식은?</option>
+                        </select>
+                </tr>
+
+                <tr>
+                    <td>답변</td>
+                    <td><input type='text' name='pwhintans'></td>
+                </tr>
+
+                <tr>
+                    <td>성별</td>
+                    <td>
+                        <input type="radio" name="gender"/ checked> 남자
+                        <input type="radio" name="gender" /> 여자
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>생년월일</td>
+                    <td><input type="date" name="birthday" id=""></td>
+                </tr>
+
+                <tr>
+                    <td>전화번호</td>
+                    <td>
+                        <input type="radio" name="phone" /> SKT
+                        <input type="radio" name="phone" /> KT
+                        <input type="radio" name="phone" /> LGU+
+                        <select>
+                            <option> 010 </option>
+                            <option> 011 </option>
+                            <option> 016 </option>
+                            <option> 018 </option>
+                        </select>
+                        <input type="text" size="6" /> - <input type="text" size="6" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>이메일 주소</td>
+                    <td>
+                        <input type="text" /> @ <input type="text" />
+                        <select>
+                            <option> 직접입력 </option>
+                            <option> naver.com </option>
+                            <option> daum.net </option>
+                            <option> nate.com </option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>주소</td>
+                    <td>
+                        <input type="text" />
+                        <input type="button" value="주소찾기" /> <input type="text" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>직업</td>
+                    <td><select>
+                            <option>선택</option>
+                            <option>학생</option>
+                            <option>회사원</option>
+                            <option>자영업</option>
+                            <option>공무원</option>
+                            <option>무직</option>
+                        </select></td>
+                </tr>
+
+                <tr>
+                    <td>메일/sns 정보 수신</td>
+                    <td class="s">
+                        <input type="radio" name="chk_mail" checked> 수신
+                        <input type="radio" name="chk_mail" value="4"> 수신거부
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>정보공개여부</td>
+                    <td>
+                        <select name='chk_open' size='0'>
+                            <option value=''>선택하세요</option>
+                            <option value='5'>모두공개</option>
+                            <option value='6'>비공개</option>
+                            <option value='7'>1단계공개</option>
+                            <option value='8'>2단계공개</option>
+                        </select>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td colspan="2" style="text-align:center; padding:20px;">
+                        <br>
+                        <input type="submit" value="회원가입" style="padding:5px 50px 5px 50px ;">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="reset" value="취소" style="padding:5px 50px 5px 50px ;">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footA">
+                <h2>성지보고</h2>
+                <p>주소: 서울 금천구 가산디지털1로 186<br>
+                    <a href="http://logger.net"></a></p>
+
+            </div>
+            <nav class="footB">
+                <div>
+                    <h3>여행지</h3>
+                    <ul>
+                        <li><a href="">아시아</a></li>
+                        <li><a href="">유럽</a></li>
+                        <li><a href="">남미</a></li>
+                        <li><a href="">북미</a></li>
+                        <li><a href="">오세아니아</a></li>
+                        <li><a href="">아프리카</a></li>
+                        <li><a href="">극지</a></li>
+                        <li><a href="">우주</a></li>
+                    </ul>
+
+                </div>
+                <div>
+                    <h3>스타일</h3>
+                    <ul>
+                        <li><a href="">직원동행</a></li>
+                        <li><a href="">로컬가이드</a></li>
+                        <li><a href="">자유여행</a></li>
+                    </ul>
+
+                </div>
+                <div>
+                    <h3>회사소개</h3>
+                    <ul>
+                        <li><a href="">오시는길</a></li>
+                        <li><a href="">Q&amp;A</a></li>
+
+                    </ul>
+
+                </div>
+            </nav>
+
+            <div class="footC">
+                <p>우편번호 04059 (구)121-190 서울 금천구 가산디지털1로 186 5층 성지보고 여행사<br>대표자 김성진. 사업자 등록번호 111-11-11111 통신판매업신고번호 제2008-서울마포-01080호<br>성지보고여행사는 일반여행업 보증보험, 기획여행업 보증보험에 가입되어 있습니다.<br><a href='/?c=gesi&f=oDetail&no=8768&menuCode=15'>개인정보취급방침</a>&nbsp; | &nbsp;<a href='/?c=gesi&f=oDetail&no=11596&menuCode=15'>여행약관</a>&nbsp; | &nbsp;<a href='/shoestring/2015_early/com_way.html'>성지보고 찾아오기</a>&nbsp; | &nbsp;<a href='/?c=gesi&f=oDetail&no=9564&menuCode=15'>여행시 주의사항</a>&nbsp; | &nbsp;<a href='mailto:sjbg@gmail.com'>sjbg@gmail.com</a></p>
+                <p>&copy; 2020 SJBG Travel corp. All rights reserved. </p>
+            </div>
+
+
+
+        </div>
+    </footer>
+</body>
+
+</html>

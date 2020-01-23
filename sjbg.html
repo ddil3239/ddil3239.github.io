@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>성지를 찾아보고</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/sjbg.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <script>
+        $(function() {
+                $('.navI').click(function() {
+                        $('.myMenu').slideToggle();
+                    }
+
+                );
+            }
+
+        );
+    </script>
+
+</head>
+
+<body>
+
+    <header>
+        <div id="top">
+            <div id="toplogo">
+               <a href="./sjbg.html">
+                <p class="logo"><u class="bold">성지</u>를<br /> 찾아<u class="bold">보고</u></p>
+                </a>
+            </div>
+
+            <div id="search">
+                <form method=get action="http://www.google.co.kr/search" target="_blank" >   
+                <table bgcolor="#FFFFFF">    
+                 <tr>       
+                 <td>           
+                <input type=text name=q size=25 maxlength=255 value="" />          
+                <input type=submit name=btnG value="검색" />        
+                </td>     
+                </tr>  
+                 </table> 
+                 </form> 
+            </div>
+
+            <div id="lefttop">
+                <br>
+                <a href="./html/join.html">가입하기</a>
+                &nbsp;&nbsp;&nbsp;
+                <a href="./html/login.html">로그인 &nbsp;&nbsp;&nbsp;</a>
+            </div>
+        </div>
+
+    </header>
+    <header>
+        <div class="container-fluid">
+            <div id="myCarousel" class="carousel slide">
+
+                <ul class="carousel-indicators">
+                    <li class="item1 active"></li>
+                    <li class="item2"></li>
+                    <li class="item3"></li>
+                    <li class="item4"></li>
+                </ul>
+
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./project/best1.jpg" alt="Europe">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>America</h5>
+                            <p>Wonderland</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./project/best2.jpg" alt="America">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Oceania</h5>
+                            <p>Greatness</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./project/best3.jpg" alt="Asia">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Asia</h5>
+                            <p>Vast</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./project/best4.jpg" w alt="Oceania">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Africa</h5>
+                            <p>Astonishing</p>
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <div><a class="carousel-control-prev" href="#myCarousel">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#myCarousel">
+                            <span class="carousel-control-next-icon"></span></a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <script>
+            $(document).ready(function() {
+                // Activate Carousel
+                $("#myCarousel").carousel();
+
+                // Enable Carousel Indicators
+                $(".item1").click(function() {
+                    $("#myCarousel").carousel(0);
+                });
+                $(".item2").click(function() {
+                    $("#myCarousel").carousel(1);
+                });
+                $(".item3").click(function() {
+                    $("#myCarousel").carousel(2);
+                });
+
+                // Enable Carousel Controls
+                $(".carousel-control-prev").click(function() {
+                    $("#myCarousel").carousel("prev");
+                });
+                $(".carousel-control-next").click(function() {
+                    $("#myCarousel").carousel("next");
+                });
+            });
+        </script>
+    </header>
+
+    <nav>
+        <div id="container">
+            <button type="button" class="navI">
+                <span class="fa fa-bars" title="Menu"></span>
+            </button>
+            <ul class="myMenu">
+                <li class="menu1"><a href="./sjbg.html" style="color: white">홈</a></li>
+                <li class="menu2">
+                    여행지
+                    <ul class="menu2_s submenu">
+                        <li><a href="./html/log3.html">아시아</a></li>
+                        <li><a href="./html/log3.html">유럽</a></li>
+                        <li><a href="./html/log3.html">남미</a></li>
+                        <li><a href="./html/log3.html">북미</a></li>
+                        <li><a href="./html/log3.html">오세아니아</a></li>
+                        <li><a href="./html/log3.html">아프리카</a></li>
+                        <li><a href="./html/log3.html">극지</a></li>
+                        <li><a href="./html/log3.html">우주</a></li>
+                    </ul>
+                </li>
+                <li class="menu3">
+                    스타일
+                    <ul class="menu3_s submenu">
+                        <li>직원동행</li>
+                        <li>로컬가이드</li>
+                        <li>자유여행</li>
+                    </ul>
+                </li>
+                <li class="menu4">
+                    <a href="./html/info.html" style="color: white">회사소개</a>
+                    <ul class="menu4_s submenu">
+                        <li>회사소개</li>
+                        <li>오시는길</li>
+                        <li>Q&amp;A</li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <section class="listA">
+        <div class="container">
+            <h1>아시아</h1>
+        </div>
+        <div class="container">
+
+            <article>
+                <a href="./html/log3.html">
+                    <div class="photo" style="background-image: url(./project/asia1.jpg)"></div>
+                    <div class="text">
+                        <h2>[우리끼리]가족 단독 캄보디아</h2>
+                        <p>씨엠립/앙코르왓 우리끼리 4명 모이면 세렝게티 사파리+잔지바르 6일 특별한 여행!!!</p>
+                    </div>
+                </a>
+            </article>
+            <article>
+                <a href="./html/log3.html">
+                    <div class="photo" style="background-image: url(./project/asia2.jpg)"></div>
+                    <div class="text">
+                        <h2>다낭/호이안 단독여행</h2>
+                        <p>단독!!!소금채취 투어추가상품! 가족들과 1년먹을 소금채취해가세요</p>
+                    </div>
+                </a>
+            </article>
+            <article>
+                <a href="./html/log3.html">
+                    <div class="photo" style="background-image: url(./project/asia3.jpg)"></div>
+                    <div class="text">
+                        <h2>오사카3박4일</h2>
+                        <p>이시국에 가면 대박할인!여행간건 비밀보장!!</p>
+                    </div>
+                </a>
+            </article>
+            <article>
+                <a href="./html/log3.html">
+                    <div class="photo" style="background-image: url(./project/asia4.jpg)"></div>
+                    <div class="text">
+                        <h2>북한 언제가보니?</h2>
+                        <p>금강산도 식후경! 평양냉면 패키지포함 여행사 특별!</p>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <section class="listB">
+        <div class="container">
+            <h1>유럽</h1>
+        </div>
+        <div class="container">
+
+            <article>
+                <a href="./html/log3.html">
+                    <div class="photo" style="background-image: url(./project/europe1.jpg)"></div>
+                    <div class="text">
+                        <h2>오늘의특가!!스페인/포르투갈/모로코</h2>
+                        <p>이베리아의 아름다운 지중해여행 오늘만 특가!</p>
+                    </div>
+                </a>
+            </article>
+            <article>
+                <a href="./html/log3.html">
+                    <div class="photo" style="background-image: url(./project/europe2.jpg)"></div>
+                    <div class="text">
+                        <h2>한폭의 그림 그리스</h2>
+                        <p>산토리니+자킨토스+아라호바마을 그리스9일 가보자!</p>
+                    </div>
+                </a>
+            </article>
+            <article>
+                <a href="./html/log3.html">
+                    <div class="photo" style="background-image: url(./project/europe3.jpg)"></div>
+                    <div class="text">
+                        <h2>영국과 스위스를 더하다</h2>
+                        <p>서유럽4국 12일!옥스퍼드+융프라우+베네치아</p>
+                    </div>
+                </a>
+            </article>
+            <article>
+                <a href="./html/log3.html">
+                    <div class="photo" style="background-image: url(./project/europe4.jpg)"></div>
+                    <div class="text">
+                        <h2>시작이좋다!No쇼핑 동유럽</h2>
+                        <p>국적기 직항/ 플리트비체 국립공원</p>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <section class="listC">
+        <div class="container">
+            <h1>남미</h1>
+        </div>
+        <div class="container">
+
+            <article>
+                <a href="./html/log3.html">
+                    <div class="photo" style="background-image: url(./project/s_america1.jpg)"></div>
+                    <div class="text">
+                        <h2>브라질 삼바축제 투어</h2>
+                        <p>원 투 쓰리 포 헛 둘 셋 넷 스텝 원 투 쓰리 포 찍고 찍고 돌리고</p>
+                    </div>
+                </a>
+            </article>
+            <article>
+                <a href="./html/log3.html">
+                    <div class="photo" style="background-image: url(./project/s_america2.jpg)"></div>
+                    <div class="text">
+                        <h2>핵심 2개국 페루 볼리비아 투어</h2>
+                        <p>우유니소금사막에서 인생샷남기고 마추픽추에서 인생샷샷남기고~</p>
+                    </div>
+                </a>
+            </article>
+            <article>
+                <a href="./html/log3.html">
+                    <div class="photo" style="background-image: url(./project/s_america3.jpg)"></div>
+                    <div class="text">
+                        <h2>멕시코 직항 완전일주!</h2>
+                        <p>영화 코코 따라잡기! 노팁/노옵션/노쇼핑 !!대박사건!!!</p>
+                    </div>
+                </a>
+            </article>
+            <article>
+                <a href="./html/log3.html">
+                    <div class="photo" style="background-image: url(./project/s_america4.jpg)"></div>
+                    <div class="text">
+                        <h2>쿠바 하바나/바라데로</h2>
+                        <p>올인크루시브 대잔치! 올드카투어포함 하바나에 푹빠져보자</p>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <section class="listD">
+        <div class="container">
+            <h1>북미</h1>
+        </div>
+        <div class="container">
+
+            <article>
+                <a href="./html/log3.html">
+                    <div class="photo" style="background-image: url(./project/n_america1.jpg)"></div>
+                    <div class="text">
+                        <h2>캘리포니아5박6일 디즈니투어</h2>
+                        <p>디즈니 짱짱짱 공주짱짱 덕질해보자</p>
+                    </div>
+                </a>
+            </article>
+            <article>
+                <a href="./html/log3.html">
+                    <div class="photo" style="background-image: url(./project/n_america2.jpg)"></div>
+                    <div class="text">
+                        <h2>미서부 완전일주</h2>
+                        <p>4대캐년+미서부완전일주+산타카탈리나 9.10일</p>
+                    </div>
+                </a>
+            </article>
+            <article>
+                <a href="./html/log3.html">
+                    <div class="photo" style="background-image: url(./project/n_america3.jpg)"></div>
+                    <div class="text">
+                        <h2>캐나다 동부+미동부 한방에끝내기</h2>
+                        <p>나이아가라가서 나이야 가라! 외치기 챌린지 포함상품</p>
+                    </div>
+                </a>
+            </article>
+            <article>
+                <a href="./html/log3.html">
+                    <div class="photo" style="background-image: url(./project/n_america4.jpg)"></div>
+                    <div class="text">
+                        <h2>캐나다 밴쿠버+빅토리아+옐로나이프</h2>
+                        <p>밴프 록키산맥뿌시고 옐로나이프가서 오로라도 뿌시고! 다뿌시고!</p>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <section class="listE">
+        <div class="container">
+            <h1>오세아니아</h1>
+        </div>
+        <div class="container">
+
+            <article>
+                <a href="./html/log3.html">
+                    <div class="photo" style="background-image: url(./project/oceania1.jpg)"></div>
+                    <div class="text">
+                        <h2>위대한자연 대자연</h2>
+                        <p>호주산불지역 봉사활동 패키지!캥거루 코알라 살리기 투어포함</p>
+                    </div>
+                </a>
+            </article>
+            <article>
+                <a href="./html/log3.html">
+                    <div class="photo" style="background-image: url(./project/oceania2.jpg)"></div>
+                    <div class="text">
+                        <h2>시드니/저비스베이/블루마운틴</h2>
+                        <p>온천뿌시고 오페라하우스 뿌시고</p>
+                    </div>
+                </a>
+            </article>
+            <article>
+                <a href="./html/log3.html">
+                    <div class="photo" style="background-image: url(./project/oceania3.jpg)"></div>
+                    <div class="text">
+                        <h2>뉴질랜드 해밀턴가든+호빗마을</h2>
+                        <p>호빗마을가서 거인느낌 물씬 내보기 가든투어 꽃밭에서 뒹굴러가봅시다!</p>
+                    </div>
+                </a>
+            </article>
+            <article>
+                <a href="./html/log3.html">
+                    <div class="photo" style="background-image: url(./project/oceania4.jpg)"></div>
+                    <div class="text">
+                        <h2>뉴질랜드 북섬/네이피어아트데코</h2>
+                        <p>그림인지 풍경인지 분간못하는 투어 정신줄 잡고 출발하세요!</p>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <section class="listF">
+        <div class="container">
+            <h1>아프리카</h1>
+        </div>
+        <div class="container">
+
+            <article>
+                <a href="./html/log3.html">
+                    <div class="photo" style="background-image: url(./project/africa1.jpg)"></div>
+                    <div class="text">
+                        <h2>남아공 케이프타운+사파리투어</h2>
+                        <p>빅토리아폭포&케이프타운/전일정4성급호텔 패키지</p>
+                    </div>
+                </a>
+            </article>
+            <article>
+                <a href="./html/log3.html">
+                    <div class="photo" style="background-image: url(./project/africa2.jpg)"></div>
+                    <div class="text">
+                        <h2>사자vs고양이 골라봐 아프리카가보자</h2>
+                        <p>세렝게티국립공원/사파리캣츠디너쇼/사자밥주기체험 포함 상품</p>
+                    </div>
+                </a>
+            </article>
+            <article>
+                <a href="./html/log3.html">
+                    <div class="photo" style="background-image: url(./project/africa3.jpg)"></div>
+                    <div class="text">
+                        <h2>특별한경험!나미비아 붉은사막투어</h2>
+                        <p>여행국가 : 잠비아, 보츠와나, 짐바브웨, 남아프리카 공화국</p>
+                    </div>
+                </a>
+            </article>
+            <article>
+                <a href="./html/log3.html">
+                    <div class="photo" style="background-image: url(./project/africa4.jpg)"></div>
+                    <div class="text">
+                        <h2>[에티하드항공 비즈니스석 탑승][품격] 아프리카 5/6개국13일</h2>
+                        <p>sa항공연합 여유로운 명품 럭셔리 트레인타고 빅토리아폭포 보러가자!</p>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <section class="listG">
+        <div class="container">
+            <h1>극지</h1>
+        </div>
+        <div class="container">
+
+            <article>
+                <a href="./html/log3.html">
+                    <div class="photo" style="background-image: url(./project/antarctic1.jpg)"></div>
+                    <div class="text">
+                        <h2>국내 유일 인솔자 남극여행</h2>
+                        <p>우슈아이아에서 남극까지 크루즈항해!평생타볼 배 지금 다타보자!</p>
+                    </div>
+                </a>
+            </article>
+            <article>
+                <a href="./html/log3.html">
+                    <div class="photo" style="background-image: url(./project/antarctic2.jpg)"></div>
+                    <div class="text">
+                        <h2>북극 투어 16일! 길지만짧다</h2>
+                        <p>펭귄밥주기 투어 폴라베어랑 코카콜라마시기 패키지 포함</p>
+                    </div>
+                </a>
+            </article>
+            <article>
+                <a href="./html/log3.html">
+                    <div class="photo" style="background-image: url(./project/antarctic3.jpg)"></div>
+                    <div class="text">
+                        <h2>북극탐험/극지방투어/8박9일</h2>
+                        <p>북극곰과 고래찾기,자정에도 지지않는 태양 경험하기!!!!언제또해보겠나</p>
+                    </div>
+                </a>
+            </article>
+            <article>
+                <a href="./html/log3.html">
+                    <div class="photo" style="background-image: url(./project/antarctic4.jpg)"></div>
+                    <div class="text">
+                        <h2>북극 스발라르 군도&스피츠바르겐</h2>
+                        <p>눈으로 덮인 산과 빙하,숨이막힐듯한 장관을 이루는 피오르 방문!</p>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <section class="listH">
+        <div class="container">
+            <h1>우주</h1>
+        </div>
+        <div class="container">
+
+            <article>
+                <a href="./html/log3.html">
+                    <div class="photo" style="background-image: url(./project/universe1.jpg)"></div>
+                    <div class="text">
+                        <h2>나사 초청 여행패키지 단독!!!!</h2>
+                        <p>산소통제공 우주복제공</p>
+                    </div>
+                </a>
+            </article>
+            <article>
+                <a href="./html/log3.html">
+                    <div class="photo" style="background-image: url(./project/universe2.jpg)"></div>
+                    <div class="text">
+                        <h2>화성/금성 투어 10박14일</h2>
+                        <p>우주선에서 우주식량먹어보기 패키지 포함</p>
+                    </div>
+                </a>
+            </article>
+            <article>
+                <a href="./html/log3.html">
+                    <div class="photo" style="background-image: url(./project/universe3.jpg)"></div>
+                    <div class="text">
+                        <h2>[NASA 체험]블랙홀 근처까지 패키지!!!</h2>
+                        <p>가면 돌아올수있을지 없을지 모르는 투어 인생 복불복!!!!</p>
+                    </div>
+                </a>
+            </article>
+            <article>
+                <a href="./html/log3.html">
+                    <div class="photo" style="background-image: url(./project/universe4.jpg)"></div>
+                    <div class="text">
+                        <h2>밖에서 바라본 지구투어!!!</h2>
+                        <p>영상제작,사진촬영 포함상품! 인생샷인지 인생마지막샷인지 느껴보세요</p>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footA">
+                <h2>성지보고</h2>
+                <p>주소: 서울 금천구 가산디지털1로 186<br>
+                    <a href="http://logger.net"></a></p>
+
+            </div>
+            <nav class="footB">
+                <div>
+                    <h3>여행지</h3>
+                    <ul>
+                        <li><a href="">아시아</a></li>
+                        <li><a href="">유럽</a></li>
+                        <li><a href="">남미</a></li>
+                        <li><a href="">북미</a></li>
+                        <li><a href="">오세아니아</a></li>
+                        <li><a href="">아프리카</a></li>
+                        <li><a href="">극지</a></li>
+                        <li><a href="">우주</a></li>
+                    </ul>
+
+                </div>
+                <div>
+                    <h3>스타일</h3>
+                    <ul>
+                        <li><a href="">직원동행</a></li>
+                        <li><a href="">로컬가이드</a></li>
+                        <li><a href="">자유여행</a></li>
+                    </ul>
+
+                </div>
+                <div>
+                    <h3>회사소개</h3>
+                    <ul>
+                        <li><a href="">오시는길</a></li>
+                        <li><a href="">Q&amp;A</a></li>
+
+                    </ul>
+
+                </div>
+            </nav>
+
+            <div class="footC">
+                <p>우편번호 04059 (구)121-190 서울 금천구 가산디지털1로 186 5층 성지보고 여행사<br>대표자 김성진. 사업자 등록번호 111-11-11111 통신판매업신고번호 제2008-서울마포-01080호<br>성지보고여행사는 일반여행업 보증보험, 기획여행업 보증보험에 가입되어 있습니다.<br><a href='/?c=gesi&f=oDetail&no=8768&menuCode=15'>개인정보취급방침</a>&nbsp; | &nbsp;<a href='/?c=gesi&f=oDetail&no=11596&menuCode=15'>여행약관</a>&nbsp; | &nbsp;<a href='/shoestring/2015_early/com_way.html'>성지보고 찾아오기</a>&nbsp; | &nbsp;<a href='/?c=gesi&f=oDetail&no=9564&menuCode=15'>여행시 주의사항</a>&nbsp; | &nbsp;<a href='mailto:sjbg@gmail.com'>sjbg@gmail.com</a></p>
+                <p>&copy; 2020 SJBG Travel corp. All rights reserved. </p>
+            </div>
+
+
+
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

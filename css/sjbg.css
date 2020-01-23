@@ -1,0 +1,709 @@
+@media (max-width:599px) {
+    :root {
+        font-size: 14px
+    }
+}
+
+@media(min-width:600px) and (max-width: 799px) {
+    :root {
+        font-size: 16px
+    }
+}
+
+@media(min-width: 800px) {
+    :root {
+        font-size: 18px
+    }
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/*header*/
+header {
+    margin-bottom: 30px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+.logo {
+    background-color: none;
+    color: white;
+    width: 80px;
+    height: 63px;
+    border: 3px solid white;
+    text-align: left;
+    justify-content: center;
+    font-variant: small-caps;
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+.bold {
+    font-size: 20px;
+}
+
+#toplogo {
+    margin-left: 15px;
+    float: left;
+    position: relative;
+    left: 0%
+}
+
+#search {
+    float: left;
+    position: relative;
+    left: 30%;
+    margin-top: 20px
+}
+
+#lefttop {
+    color: white;
+    background-color: skyblue;
+    text-align: right;
+    height: 80px;
+
+}
+
+#lefttop a:visited,
+#lefttop a:hover,
+#lefttop a:link {
+    text-decoration: none;
+    color: white;
+}
+
+/*navigation*/
+
+ul,
+ol,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/*
+.myMenu {
+    text-decoration: none;
+    color: white
+}
+*/
+
+div#container {
+    height: 35px;
+    padding-left: 15px;
+}
+
+ul.myMenu > li {
+    display: inline-block;
+    width: 150px;
+    padding: 5px 10px;
+    margin: 0px 20px 0px;
+    background: lightskyblue;
+    color: white;
+    border: 1px solid #eee;
+    text-align: center;
+    position: relative;
+}
+
+ul.myMenu > li:hover {
+    background: skyblue;
+}
+
+ul.myMenu > li ul.submenu {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+
+ul.myMenu > li:hover ul.submenu {
+    display: block;
+    text-decoration: none;
+    color: white
+}
+
+ul.myMenu > li ul.submenu > li {
+    display: inline-block;
+    width: 140px;
+    padding: 5px 10px;
+    background: lightskyblue;
+    color: white;
+    border: 1px solid #eee;
+    text-align: center;
+}
+
+ul.myMenu > li ul.submenu > li:hover {
+    background: skyblue;
+    color: white
+}
+
+.navI {
+    display: block;
+    outline: none;
+    border: none;
+    background: none;
+    padding: 0;
+    margin-right: 10px;
+    font-size: 28px;
+    cursor: pointer;
+    opacity: 0.5;
+    float: right;
+}
+
+/*큰 화면 설정*/
+@media (min-width:768px) {
+    nav #container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    .navI {
+        display: none;
+    }
+
+    .myMenu {
+        display: block !important
+    }
+}
+
+/*작은 화면 설정*/
+@media (max-width: 767px) {
+    .myMenu {
+        display: none
+    }
+
+    .navI:hover {
+        opacity: 0.3
+    }
+}
+
+
+/*section-listA*/
+.listA .container {
+    display: flex;
+    max-width: 1200px;
+    margin: 10px auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.listA article {
+    flex: 1 1 250px;
+}
+
+.listA a {
+    margin: 10px;
+    display: block;
+    border: 1px solid #ddd;
+    text-decoration: none;
+    color: inherit;
+}
+
+.listA a:hover {
+    opacity: 0.8;
+}
+
+.listA .photo {
+    min-height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.listA h2 {
+    font-size: 18px;
+}
+
+.listA p {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.listA .text {
+    margin: 10px;
+}
+
+.listA h1 {
+    /*padding-left: 50px*/
+
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+/*listB -*/
+
+.listB .container {
+    display: flex;
+    max-width: 1200px;
+    margin: 10px auto;
+    flex-wrap: wrap;
+}
+
+.listB article {
+    flex: 1 1 250px;
+}
+
+.listB a {
+    margin: 10px;
+    display: block;
+    border: 1px solid #ddd;
+    text-decoration: none;
+    color: inherit;
+}
+
+.listB a:hover {
+    opacity: 0.8;
+}
+
+.listB .photo {
+    min-height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.listB h2 {
+    font-size: 18px;
+}
+
+.listB p {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.listB .text {
+    margin: 10px;
+}
+
+.listB h1 {
+    /*padding-left: 50px*/
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+/*listC -*/
+
+.listC .container {
+    display: flex;
+    max-width: 1200px;
+    margin: 30px auto;
+    flex-wrap: wrap;
+}
+
+.listC article {
+    flex: 1 1 250px;
+}
+
+.listC a {
+    margin: 10px;
+    display: block;
+    border: 1px solid #ddd;
+    text-decoration: none;
+    color: inherit;
+}
+
+.listC a:hover {
+    opacity: 0.8;
+}
+
+.listC .photo {
+    min-height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.listC h2 {
+    font-size: 18px;
+}
+
+.listC p {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.listC .text {
+    margin: 10px;
+}
+
+.listC h1 {
+    /*padding-left: 50px*/
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+/*listD -*/
+
+.listD .container {
+    display: flex;
+    max-width: 1200px;
+    margin: 30px auto;
+    flex-wrap: wrap;
+}
+
+.listD article {
+    flex: 1 1 250px;
+}
+
+.listD a {
+    margin: 10px;
+    display: block;
+    border: 1px solid #ddd;
+    text-decoration: none;
+    color: inherit;
+}
+
+.listD a:hover {
+    opacity: 0.8;
+}
+
+.listD .photo {
+    min-height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.listD h2 {
+    font-size: 18px;
+}
+
+.listD p {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.listD .text {
+    margin: 10px;
+}
+
+.listD h1 {
+    /*padding-left: 50px*/
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+/*listE -*/
+
+.listE .container {
+    display: flex;
+    max-width: 1200px;
+    margin: 30px auto;
+    flex-wrap: wrap;
+}
+
+.listE article {
+    flex: 1 1 250px;
+}
+
+.listE a {
+    margin: 10px;
+    display: block;
+    border: 1px solid #ddd;
+    text-decoration: none;
+    color: inherit;
+}
+
+.listE a:hover {
+    opacity: 0.8;
+}
+
+.listE .photo {
+    min-height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.listE h2 {
+    font-size: 18px;
+}
+
+.listE p {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.listE .text {
+    margin: 10px;
+}
+
+.listE h1 {
+    /*padding-left: 50px*/
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+/*listF -*/
+
+.listF .container {
+    display: flex;
+    max-width: 1200px;
+    margin: 30px auto;
+    flex-wrap: wrap;
+}
+
+.listF article {
+    flex: 1 1 250px;
+}
+
+.listF a {
+    margin: 10px;
+    display: block;
+    border: 1px solid #ddd;
+    text-decoration: none;
+    color: inherit;
+}
+
+.listF a:hover {
+    opacity: 0.8;
+}
+
+.listF .photo {
+    min-height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.listF h2 {
+    font-size: 18px;
+}
+
+.listF p {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.listF .text {
+    margin: 10px;
+}
+
+.listF h1 {
+    /*padding-left: 50px*/
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+/*listG -*/
+
+
+.listG .container {
+    display: flex;
+    max-width: 1200px;
+    margin: 30px auto;
+    flex-wrap: wrap;
+
+}
+
+.listG article {
+    flex: 1 1 250px;
+}
+
+.listG a {
+    margin: 10px;
+    display: block;
+    border: 1px solid #ddd;
+    text-decoration: none;
+    color: inherit;
+}
+
+.listG a:hover {
+    opacity: 0.8;
+}
+
+.listG .photo {
+    min-height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.listG h2 {
+    font-size: 18px;
+}
+
+.listG p {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.listG .text {
+    margin: 10px;
+}
+
+.listG h1 {
+
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+/*listH*/
+
+.listH .container {
+    display: flex;
+    max-width: 1200px;
+    margin: 30px auto;
+    flex-wrap: wrap;
+
+}
+
+.listH article {
+    flex: 1 1 250px;
+}
+
+.listH a {
+    margin: 10px;
+    display: block;
+    border: 1px solid #ddd;
+    text-decoration: none;
+    color: inherit;
+}
+
+.listH a:hover {
+    opacity: 0.8;
+}
+
+.listH .photo {
+    min-height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.listH h2 {
+    font-size: 18px;
+}
+
+.listH p {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.listH .text {
+    margin: 10px;
+}
+
+.listH h1 {
+    /*padding-left: 50px*/
+
+    flex: 1 1 300px;
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+/*footer*/
+
+footer {
+    background-color: lightskyblue;
+    color: white;
+}
+
+footer .container {
+    padding: 40px 20px;
+
+}
+
+@media(min-width: 768px) {
+    footer .container {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    .footA {
+        flex: 0 0 40%
+    }
+
+    .footB {
+        flex: 0 0 60%
+    }
+
+    .footC {
+        flex: 0 0 100%
+    }
+}
+
+.fontA {
+    margin-bottom: 30px;
+}
+
+.footA h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    letter-spacing: 0.2em;
+}
+
+
+}
+
+.footA a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.footB div {
+    margin-bottom: 20px;
+
+}
+
+.footB h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    border-bottom: 1px solid currentColor;
+    font-size: 14px;
+}
+
+.footB ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+.footB a {
+    display: block;
+    padding: 5px;
+    color: inherit;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.footB a:hover {
+    background-color: rgba(0, 0, 0, 0.3)
+}
+
+@media (min-width: 768px) {
+    .footB {
+        display: flex;
+
+    }
+
+    .footB div {
+        flex: 1;
+    }
+
+    .footB div:not(:last-child) {
+        margin-right: 40px;
+    }
+}
+
+.footC {
+    font-size: 12px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.compinfo h1 {
+    background-color: skyblue;
+    color: white;
+    padding: 30px;
+    
+}
